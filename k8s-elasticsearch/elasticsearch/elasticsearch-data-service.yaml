@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: infra
+  name: elasticsearch-data
+  labels:
+    app: elasticsearch
+    role: data
+spec:
+  ports:
+  - port: 9300
+    name: transport
+  selector:
+    app: elasticsearch
+    role: data
+---
