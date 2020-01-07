@@ -1,0 +1,23 @@
+{
+    "root": true,
+    "env": {
+        "node": true
+    },
+    "plugins": [
+        "flowtype"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "linebreak-style": ["error", "unix"],
+        "eol-last": 2,
+        "space-in-parens": ["error", "never"],
+        "no-multiple-empty-lines": 1,
+        "prefer-const": "error",
+        "space-infix-ops": "error",
+        "no-useless-escape": "off",
+        "require-atomic-updates": "off"
+    }
+}
