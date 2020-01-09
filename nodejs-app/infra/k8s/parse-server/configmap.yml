@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: parse-server-namespace
+  name: parse-server-configmap
+data:
+  DATABASE_URI: "mongodb://mongodb-svc:27017/my-db"
+  SERVER_URL: "http://localhost:1337/parse"
+  APP_ID: "app_id_starter"
