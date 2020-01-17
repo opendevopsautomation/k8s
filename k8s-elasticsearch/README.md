@@ -2,9 +2,10 @@
 
 See my Medium story for more details.
 
-https://medium.com/@anupdubey/setup-elastic-search-cluster-kibana-fluentd-on-kubernetes-with-x-pack-security-part-1-271e57c2fe19
+https://opendevops.in/2019/12/27/setup-elastic-search-cluster-kibana-fluentd-on-kubernetes-with-x-pack-security-part-1/
 
-https://medium.com/@anupdubey/setup-elastic-search-cluster-kibana-fluentd-on-kubernetes-with-x-pack-security-part-2-593a01b79fbb
+https://opendevops.in/2019/12/27/setup-elastic-search-cluster-kibana-fluentd-on-kubernetes-with-x-pack-security-part-2/
 
-https://medium.com/@anupdubey/setup-elastic-search-cluster-kibana-fluentd-on-kubernetes-with-x-pack-security-part-3-5579343b5113
+https://opendevops.in/2019/12/27/setup-elastic-search-cluster-kibana-fluentd-on-kubernetes-with-x-pack-security-part-3/
 
+https://opendevops.in/2020/01/16/how-to-create-custom-indices-based-on-kubernetes-metadata-using-fluentd/
