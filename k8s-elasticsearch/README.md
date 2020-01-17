@@ -1,6 +1,6 @@
 # k8s-elasticsearch
 
-See my Medium story for more details.
+See our website blog for more details.
 
 https://opendevops.in/2019/12/27/setup-elastic-search-cluster-kibana-fluentd-on-kubernetes-with-x-pack-security-part-1/
 
