@@ -3,13 +3,6 @@
     "env": {
         "node": true
     },
-    "plugins": [
-        "flowtype"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module"
-    },
     "rules": {
         "linebreak-style": ["error", "unix"],
         "eol-last": 2,
@@ -18,6 +11,10 @@
         "prefer-const": "error",
         "space-infix-ops": "error",
         "no-useless-escape": "off",
-        "require-atomic-updates": "off"
+        "require-atomic-updates": "off",
+        "no-invalid-regexp": 2,
+        "no-dupe-keys": 2,
+        "no-duplicate-case": 2,
+        "no-debugger": 2
     }
 }

@@ -1,6 +1,7 @@
 .dockerignore
 .gitignore
 .git
+infra
 CODE_OF_CONDUCT.md
 README.md
 Dockerfile
