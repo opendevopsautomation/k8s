@@ -16,7 +16,7 @@
   },
   "scripts": {
     "lint": "eslint --cache ./",
-    "start": "node index.js"
+    "start": "node --inspect index.js"
   },
   "engines": {
     "node": ">=4.3"

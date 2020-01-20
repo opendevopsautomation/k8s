@@ -5,9 +5,6 @@ COPY ./package.json .
 RUN npm set progress=false && npm config set depth 0
 RUN npm install --only=production && npm audit fix
 
-FROM base AS test
-COPY . .
-RUN  npm run lint
 
 FROM node:10.16.3-alpine  AS release
 WORKDIR /node-app

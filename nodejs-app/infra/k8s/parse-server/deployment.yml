@@ -22,9 +22,12 @@ spec:
       - name: parse-server
         image: opendevopsautomation/parse-server:v1
         imagePullPolicy: Always
+
         ports:
           - containerPort: 1337
         envFrom:
+          - secretRef:
+              name: parse-server-secret
           - configMapRef:
               name: parse-server-configmap
         livenessProbe:
