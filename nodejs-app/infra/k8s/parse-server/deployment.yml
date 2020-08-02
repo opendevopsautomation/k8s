@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: parse-server-namespace
+  name: parse-server-deployment
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  selector:
+    matchLabels:
+      app: parse-server
+  template:
+    metadata:
+      labels:
+        app: parse-server
+    spec:
+      containers:
+      - name: parse-server
+        image: opendevopsautomation/parse-server:v1
+        imagePullPolicy: Always
+
+        ports:
+          - containerPort: 1337
+        envFrom:
+          - secretRef:
+              name: parse-server-secret
+          - configMapRef:
+              name: parse-server-configmap
+        livenessProbe:
+            httpGet:
+              path: /parse/health
+              port: 1337
+            initialDelaySeconds: 60
+            periodSeconds: 5
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"            
