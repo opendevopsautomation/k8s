@@ -1,0 +1,39 @@
+---
+version: 0.1
+testSuiteTimeout: 10
+testSuiteStep: 0
+
+
+runson: mac
+autosplit: true
+retryOnFailure: true
+maxRetries: 5
+concurrency: 1
+
+env:
+  CACHE_DIR: m2_cache_dir
+
+preDirectives:
+  commands:
+    - pwd
+    - mvn dependency:resolve
+
+postDirectives:
+  commands:
+    - ls
+    - pwd
+
+mergeArtifacts: false
+taskIdentifierInNonConflictingArtefacts: true
+uploadArtefacts:
+ - name: ExecutionSnapshots
+   path:
+    - target/surefire-reports/html/**
+
+testDiscovery:
+  type: raw
+  mode: static
+
+testRunnerCommand: echo test
+
+jobLabel: ['base1']
