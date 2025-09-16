@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-service
+  description: A test service hosted on Bitbucket
+spec:
+  type: service
+  owner: your-team
+  lifecycle: testing
+  system: test-system
